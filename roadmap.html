@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Coding Journey Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-image: linear-gradient(red, yellow);
+        }
+
+
+        .container {
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+            margin: 10px 0;
+            background-image: linear-gradient(rgb(13, 255, 0), rgb(0, 225, 255));
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step h2 {
+            font-size: 18px;
+            margin: 0;
+            cursor: pointer;
+            color: #0078d4;
+            text-decoration: underline;
+        }
+
+        .details {
+            display: none;
+            padding: 10px 20px;
+            background: #f9f9f9;
+            border-left: 3px solid #0078d4;
+            margin-top: 10px;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .day {
+            padding: 10px;
+            background: #e6f7ff;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .milestone {
+            background: #ffc107;
+            font-weight: bold;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .day {
+            background: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .day:hover {
+            transform: scale(1.05);
+            border-color: #007BFF;
+        }
+
+        .day h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #007BFF;
+        }
+
+        .day p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .day.complete {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beginner Coding Journey Roadmap</h1>
+    <p>Follow this roadmap to start your coding journey step by step. Click each step to see daily details and focus areas!</p>
+
+    <div class="container">
+        <div class="step">
+            <h2 onclick="toggleDetails('html-details')">Step 1: Learn HTML (Days 1-15)</h2>
+            <div id="html-details" class="details">
+                <p><strong>Day 1:</strong> Introduction to HTML, basic structure, and tags like <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</p>
+                <p><strong>Day 2:</strong> Learn headings, paragraphs, and text formatting tags.</p>
+                <p><strong>Day 3:</strong> Explore links and anchor tags.</p>
+                <p><strong>Day 4:</strong> Work with images and attributes.</p>
+                <p><strong>Day 5:</strong> Create lists (ordered and unordered).</p>
+                <p><strong>Day 6:</strong> Learn tables and table attributes.</p>
+                <p><strong>Day 7:</strong> Forms: input, textarea, button, and labels.</p>
+                <p><strong>Day 8:</strong> Forms: dropdowns, checkboxes, and radio buttons.</p>
+                <p><strong>Day 9:</strong> Semantic tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;article&gt;</code>.</p>
+                <p><strong>Day 10:</strong> Inline vs block elements.</p>
+                <p><strong>Day 11:</strong> Create a simple webpage structure.</p>
+                <p><strong>Day 12:</strong> Add navigation menus.</p>
+                <p><strong>Day 13:</strong> Explore meta tags and their importance.</p>
+                <p><strong>Day 14:</strong> Optimize HTML for SEO basics.</p>
+                <p><strong>Day 15:</strong> Build a complete static webpage project.</p>
+                <p>Resources: W3Schools, YouTube tutorials.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 onclick="toggleDetails('css-details')">Step 2: Learn CSS (Days 16-30)</h2>
+            <div id="css-details" class="details">
+                <p><strong>Day 16:</strong> Introduction to CSS and its syntax.</p>
+                <p><strong>Day 17:</strong> Learn selectors, properties, and values.</p>
+                <p><strong>Day 18:</strong> Understand the box model.</p>
+                <p><strong>Day 19:</strong> Work with colors, backgrounds, and borders.</p>
+                <p><strong>Day 20:</strong> Learn text styling and alignment.</p>
+                <p><strong>Day 21:</strong> Introduction to Flexbox.</p>
+                <p><strong>Day 22:</strong> Advanced Flexbox concepts.</p>
+                <p><strong>Day 23:</strong> Learn Grid layout basics.</p>
+                <p><strong>Day 24:</strong> Advanced Grid layout.</p>
+                <p><strong>Day 25:</strong> Responsive design basics (media queries).</p>
+                <p><strong>Day 26:</strong> Create a responsive webpage layout.</p>
+                <p><strong>Day 27:</strong> Animations and transitions.</p>
+                <p><strong>Day 28:</strong> Learn pseudo-classes and pseudo-elements.</p>
+                <p><strong>Day 29:</strong> Review and refine CSS skills.</p>
+                <p><strong>Day 30:</strong> Build a responsive portfolio project.</p>
+                <p>Resources: CSS Tricks, YouTube tutorials.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 onclick="toggleDetails('bootstrap-details')">Step 3: Learn Bootstrap Framework (Days 31-40)</h2>
+            <div id="bootstrap-details" class="details">
+                <p><strong>Day 31:</strong> Introduction to Bootstrap and setup.</p>
+                <p><strong>Day 32:</strong> Learn the grid system.</p>
+                <p><strong>Day 33:</strong> Explore utility classes.</p>
+                <p><strong>Day 34:</strong> Work with buttons and forms.</p>
+                <p><strong>Day 35:</strong> Learn navigation bars and menus.</p>
+                <p><strong>Day 36:</strong> Use modals and cards.</p>
+                <p><strong>Day 37:</strong> Build a simple responsive webpage.</p>
+                <p><strong>Day 38:</strong> Review Bootstrap components.</p>
+                <p><strong>Day 39:</strong> Add animations and interactivity.</p>
+                <p><strong>Day 40:</strong> Build a complete project using Bootstrap.</p>
+                <p>Resources: Bootstrap official docs, YouTube tutorials.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 onclick="toggleDetails('js-details')">Step 4: Learn JavaScript (Days 41-60)</h2>
+            <div id="js-details" class="details">
+                <p><strong>Days 41-45:</strong> Learn variables, data types, and operators.</p>
+                <p><strong>Days 46-50:</strong> Work on loops and conditional statements.</p>
+                <p><strong>Days 51-55:</strong> Learn functions, arrays, and objects.</p>
+                <p><strong>Days 56-60:</strong> Build a small interactive project like a to-do app.</p>
+                <p>Resources: MDN Web Docs, YouTube tutorials.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 onclick="toggleDetails('php-details')">Step 5: Learn PHP & MySQL (Days 61-90)</h2>
+            <div id="php-details" class="details">
+                <p><strong>Days 61-75:</strong> Learn PHP basics and how to handle forms.</p>
+                <p><strong>Days 76-85:</strong> Connect your PHP code to a MySQL database.</p>
+                <p><strong>Days 86-90:</strong> Build a simple backend project (e.g., a blog or login system).</p>
+                <p>Resources: PHP.net, MySQL official docs.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 onclick="toggleDetails('node-details')">Step 6: Learn Node.js & React.js (Days 91-120)</h2>
+            <div id="node-details" class="details">
+                <p><strong>Days 91-105:</strong> Master Node.js basics and build a simple API.</p>
+                <p><strong>Days 106-120:</strong> Learn React basics and build a dynamic front-end project.</p>
+                <p>Resources: Node.js official docs, React official docs.</p>
+            </div>
+        </div>
+        <script>
+            function toggleDetails(id) {
+                const details = document.getElementById(id);
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
+        <h3>START UNDERSTANDING YOURSELF AND MAKE BIG PROJECTS</h3>
+        <h1 style="text-align: center; color: #333;">50 Days, 50 Projects</h1>
+        <p style="text-align: center; color: #666;">Hover on a day to see the details</p>
+    
+        <div class="calendar">
+            <!-- Add 50 days -->
+            <div class="day">
+                <h3>Day 1</h3>
+                <p>HTML: Create a simple webpage</p>
+            </div>
+            <div class="day">
+                <h3>Day 2</h3>
+                <p>HTML: Create a contact form</p>
+            </div>
+            <div class="day">
+                <h3>Day 3</h3>
+                <p>CSS: Style your webpage</p>
+            </div>
+            <div class="day">
+                <h3>Day 4</h3>
+                <p>CSS: Add hover effects</p>
+            </div>
+            <div class="day">
+                <h3>Day 5</h3>
+                <p>Project: Build a basic portfolio</p>
+            </div>
+            <div class="day">
+                <h3>Day 6</h3>
+                <p>CSS: Create a responsive navigation bar</p>
+            </div>
+            <div class="day">
+                <h3>Day 7</h3>
+                <p>Project: Build a responsive webpage</p>
+            </div>
+            <div class="day">
+                <h3>Day 8</h3>
+                <p>Bootstrap: Add a carousel to your webpage</p>
+            </div>
+            <div class="day">
+                <h3>Day 9</h3>
+                <p>Bootstrap: Create a grid layout</p>
+            </div>
+            <div class="day">
+                <h3>Day 10</h3>
+                <p>Project: Design a landing page with Bootstrap</p>
+            </div>
+            <div class="day">
+                <h3>Day 11</h3>
+                <p>JavaScript: Learn variables and data types</p>
+            </div>
+            <div class="day">
+                <h3>Day 12</h3>
+                <p>JavaScript: Create a calculator</p>
+            </div>
+            <div class="day">
+                <h3>Day 13</h3>
+                <p>JavaScript: Learn functions and loops</p>
+            </div>
+            <div class="day">
+                <h3>Day 14</h3>
+                <p>JavaScript: Create a to-do list</p>
+            </div>
+            <div class="day">
+                <h3>Day 15</h3>
+                <p>Project: Build a weather app using APIs</p>
+            </div>
+            <div class="day">
+                <h3>Day 16</h3>
+                <p>jQuery: Add interactivity to your website</p>
+            </div>
+            <div class="day">
+                <h3>Day 17</h3>
+                <p>jQuery: Create a dynamic image slider</p>
+            </div>
+            <div class="day">
+                <h3>Day 18</h3>
+                <p>Project: Build an interactive gallery</p>
+            </div>
+            <div class="day">
+                <h3>Day 19</h3>
+                <p>PHP: Learn syntax and basic concepts</p>
+            </div>
+            <div class="day">
+                <h3>Day 20</h3>
+                <p>PHP: Create a simple form and process data</p>
+            </div>
+            <div class="day">
+                <h3>Day 21</h3>
+                <p>Project: Build a user registration system</p>
+            </div>
+            <div class="day">
+                <h3>Day 22</h3>
+                <p>MySQL: Learn to create and query databases</p>
+            </div>
+            <div class="day">
+                <h3>Day 23</h3>
+                <p>PHP: Connect a database and display data</p>
+            </div>
+            <div class="day">
+                <h3>Day 24</h3>
+                <p>Project: Create a login system</p>
+            </div>
+            <div class="day">
+                <h3>Day 25</h3>
+                <p>PHP: Learn CRUD operations</p>
+            </div>
+            <div class="day">
+                <h3>Day 26</h3>
+                <p>Project: Build a blogging platform</p>
+            </div>
+            <div class="day">
+                <h3>Day 27</h3>
+                <p>Node.js: Learn the basics of backend development</p>
+            </div>
+            <div class="day">
+                <h3>Day 28</h3>
+                <p>Node.js: Set up a server and handle requests</p>
+            </div>
+            <div class="day">
+                <h3>Day 29</h3>
+                <p>Project: Build a RESTful API</p>
+            </div>
+            <div class="day">
+                <h3>Day 30</h3>
+                <p>React.js: Learn the basics and create components</p>
+            </div>
+            <div class="day">
+                <h3>Day 31</h3>
+                <p>React.js: Work with state and props</p>
+            </div>
+            <div class="day">
+                <h3>Day 32</h3>
+                <p>Project: Create a movie search app</p>
+            </div>
+            <div class="day">
+                <h3>Day 33</h3>
+                <p>React.js: Learn React Router</p>
+            </div>
+            <div class="day">
+                <h3>Day 34</h3>
+                <p>Project: Build a portfolio website</p>
+            </div>
+            <div class="day">
+                <h3>Day 35</h3>
+                <p>React.js: Learn Context API</p>
+            </div>
+            <div class="day">
+                <h3>Day 36</h3>
+                <p>Project: Build a shopping cart system</p>
+            </div>
+            <div class="day">
+                <h3>Day 37</h3>
+                <p>Node.js: Work with MongoDB</p>
+            </div>
+            <div class="day">
+                <h3>Day 38</h3>
+                <p>Project: Create a chat application</p>
+            </div>
+            <div class="day">
+                <h3>Day 39</h3>
+                <p>Node.js: Implement user authentication</p>
+            </div>
+            <div class="day">
+                <h3>Day 40</h3>
+                <p>Project: Build a task manager app</p>
+            </div>
+            <div class="day">
+                <h3>Day 41</h3>
+                <p>React.js: Learn Redux for state management</p>
+            </div>
+            <div class="day">
+                <h3>Day 42</h3>
+                <p>Project: Build a social media dashboard</p>
+            </div>
+            <div class="day">
+                <h3>Day 43</h3>
+                <p>React.js: Implement API calls with Axios</p>
+            </div>
+            <div class="day">
+                <h3>Day 44</h3>
+                <p>Project: Create a blog platform with React and Node</p>
+            </div>
+            <div class="day">
+                <h3>Day 45</h3>
+                <p>JavaScript: Explore advanced ES6+ concepts</p>
+            </div>
+            <div class="day">
+                <h3>Day 46</h3>
+                <p>Project: Build a weather forecast app</p>
+            </div>
+            <div class="day">
+                <h3>Day 47</h3>
+                <p>JavaScript: Learn about asynchronous programming</p>
+            </div>
+            <div class="day">
+                <h3>Day 48</h3>
+                <p>Project: Create an expense tracker</p>
+            </div>
+            <div class="day">
+                <h3>Day 49</h3>
+                <p>Review: Polish your previous projects</p>
+            </div>
+            <div class="day">
+                <h3>Day 50</h3>
+                <p>Final Project: Build a full-stack e-commerce app</p>
+            </div>
+            
+            <!-- Repeat for all 50 days -->
+        </div>
+    </div>
+</body>
+</html>
